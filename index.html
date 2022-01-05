@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
-    <link rel="stylesheet" href="Assets/CSS/file.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Your JS</title>
+    <link rel="stylesheet" href="./assets/css/file.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Righteous&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body class="body">
+    <header>
+      <h1 class="h1">Test Your JS</h1>
+    </header>
 
-<body>
-    <div class="MainContainer">
-        <div id="IntroContainer">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt amet at nobis, quam minima aspernatur a porro, voluptatibus libero consectetur sed molestiae sit. Quam tenetur cumque voluptatibus, a repellat delectus.</p>
-            <button id="StartButton">Start Game</button>    
+    <!-- Background -->
+    <div class="background-image">
+      <!-- Countdown -->
+      <h2 class="timer">Countdown: 0</h2>
+
+      <!-- Content Area -->
+      <div class="wrapper">
+        <!-- Start Page -->
+        <div id="startpage">
+          <h2 class="title">Try your luck with Javascript!</h2>
+          <p>
+            Answer five standard coding questions correctly before the Countdown
+            times out.
+          </p>
+          <button id="start-quiz">START</button>
         </div>
-        <div id="GameContainer" class="Hide">
-            <h1>Hello World</h1>
 
+        <!-- Questions Container -->
+        <div id="questions" class="hidden">
+          <h1 id="headline"></h1>
+          <h2 id="question-title" class="title"></h2>
+          <div id="options"></div>
         </div>
+      </div>
 
+      <!-- Footer -->
+      <footer class="footer">
+        <p class="p">&copy; 2021 TnC</p>
+      </footer>
     </div>
-<script src="./Assets/JS/file.js"></script>
 
-</body>
+    <!-- Javascript Docs -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/questions.js"></script>
+  </body>
 </html>
